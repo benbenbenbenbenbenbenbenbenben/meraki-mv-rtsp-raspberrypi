@@ -10,9 +10,9 @@ essentials:
     - camera_streams:
         - url: "rtsp://192.168.0.127:9000/live"
         - url: "rtsp://192.168.0.144:9000/live"
-        - url: "https://www.yourtrainingedge.com/wp-content/uploads/2019/05/background-calm-clouds-747964.jpg"
+        - url: "https://images.rpisurv.net/example.png"
           imageurl: true
-        - url: "https://learn.zoner.com/wp-content/uploads/2018/08/landscape-photography-at-every-hour-part-ii-photographing-landscapes-in-rain-or-shine.jpg"
+        - url: "https://images.rpisurv.net/example.png"
           imageurl: true
          #To specify this url is not a camera stream but an image stream please set imageurl to true for this url
 
