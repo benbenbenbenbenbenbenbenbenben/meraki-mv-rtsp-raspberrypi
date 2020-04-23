@@ -1,0 +1,39 @@
+#THIS IS A YAML FILE, INDENTATION IS IMPORTANT. ALSO DO NOT USE TABS FOR INDENTATION, BUT USE SPACES
+#THE FOLLOWING ARE EXAMPLES WITH ALL OPTIONS EXPLAINED, REMOVE OR ADAPT THEM WITH YOUR REAL CONFIG
+
+essentials:
+
+  screens:
+      #Start config for example screen one, this is the minimal config. This will show a 2x2 if all streams are connectable,
+      #otherwise rpisurv, by default, rearranges the screen to only show the connectable streams. To disable the latter set disable_probing_for_all_streams=True
+      #Force this screen to be shown by pressing and holding F1 or keypad 0
+    - camera_streams:
+        - url: "rtsp://192.168.0.127:9000/live"
+        - url: "rtsp://192.168.0.144:9000/live"
+        - url: "https://www.yourtrainingedge.com/wp-content/uploads/2019/05/background-calm-clouds-747964.jpg"
+          imageurl: true
+        - url: "https://learn.zoner.com/wp-content/uploads/2018/08/landscape-photography-at-every-hour-part-ii-photographing-landscapes-in-rain-or-shine.jpg"
+          imageurl: true
+         #To specify this url is not a camera stream but an image stream please set imageurl to true for this url
+
+      #Autostretching makes sures all of your pixels will be uses to display streams, so you have a maximum surveillance area.
+      #But this will probably destroy the aspect ratio of your last stream.
+      #Defaults to False
+      autostretch: False
+
+      #This is how long this screen will be shown each rotation.
+      #If this is set to a very low value then it can happen that building up the active and/or the cached screen takes longer then this duration,
+      #in that case the building and caching needs to finish first before timer will be expired and next screen is shown
+      #Defaults to 20
+      duration: 60
+
+
+#!!!Normal users do not need to edit this section!!!
+advanced:
+
+#These are fallbacks if autodetection fails;
+#Normally you do not need to configure these
+fallbacks:
+  resolution:
+    width: "1920"
+    height: "1080"
