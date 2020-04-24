@@ -2,6 +2,16 @@
 
 Stream Meraki MV Camera video on a Raspberry Pi. This uses the opensource IP monitoring solutuon: rpisurv https://github.com/SvenVD/rpisurv
 
+## Use Cases
+You require low-latency streams that RTSP provides
+Require several monitors to be always on with multiple streams
+
+This simple deployment can enable you to have a Raspberry Pi in the back of each TV.
+
+<p align="center">
+  <img width="460" height="300" src="https://github.com/benbenbenbenbenbenbenbenbenben/meraki-mv-rtsp-raspberrypi/blob/master/preview.jpg?raw=true">
+</p>
+
 ## Table of Contents
 - [What You Need](#what-you-need)
 - [Meraki Dashboard](#meraki-dashboard)
@@ -20,6 +30,10 @@ Stream Meraki MV Camera video on a Raspberry Pi. This uses the opensource IP mon
 1. Ensure MV Firmware is 4.2+
 2. Enable RTSP per camera: Cameras -> Camera -> Settings -> Video Settings -> External RTSP -> yes
 3. Make a note of your RTSP stream URL: rtsp://192.168.0.127:9000/live
+
+<p align="center">
+  <img height="80" src="https://github.com/benbenbenbenbenbenbenbenbenben/meraki-mv-rtsp-raspberrypi/blob/master/rtsp.png?raw=true">
+</p>
 
 Read more about Meraki MV RTSP:
 https://documentation.meraki.com/MV/Advanced_Configuration/External_RTSP
@@ -100,3 +114,7 @@ Free gpu mem is 0.0 bytes which is less than 80000000 bytes
 The Raspberry Pi is running out of memory, make sure to increase the gpu memory mentioned above.
 If same issue try with 1 RTSP, if this works fine you will need to decrease the quality settings of the camera.
 Try changing from 1080P to 720P from the Meraki Dashboard.
+Cameras -> Camera -> Settings -> Quality and Retention
+<p align="center">
+  <img height="80" src="https://github.com/benbenbenbenbenbenbenbenbenben/meraki-mv-rtsp-raspberrypi/blob/master/quality.png?raw=true">
+</p>
