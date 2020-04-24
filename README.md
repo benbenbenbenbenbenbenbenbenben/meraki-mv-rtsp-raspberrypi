@@ -2,11 +2,8 @@
 
 Stream Meraki MV Camera video on a Raspberry Pi. This uses the opensource IP monitoring solutuon: rpisurv https://github.com/SvenVD/rpisurv
 
-## Use Cases
-You require low-latency streams that RTSP provides
-Require several monitors to be always on with multiple streams
-
-This simple deployment can enable you to have a Raspberry Pi in the back of each TV.
+## Use Case
+You require low-latency streams that RTSP provides or require several monitors to be always on with multiple streams. This simple deployment can enable you to have a Raspberry Pi in the back of each TV.
 
 <p align="center">
   <img width="460" height="300" src="https://github.com/benbenbenbenbenbenbenbenbenben/meraki-mv-rtsp-raspberrypi/blob/master/preview.jpg?raw=true">
