@@ -40,6 +40,10 @@ https://documentation.meraki.com/MV/Advanced_Configuration/External_RTSP
 2. Download the Raspberry Pi Imager
         https://www.raspberrypi.org/downloads/
 3. Run above imager, select Rasbian as OS, select your SD Card, write
+<p align="center">
+  <img height="80" src="https://github.com/benbenbenbenbenbenbenbenbenben/meraki-mv-rtsp-raspberrypi/blob/master/imager.png?raw=true">
+</p>
+
 4. Once finished go to the SD Card and create a file in the root directory called **ssh** (on Mac **touch ssh**)
         *This will enable ssh on the raspberry pi so we can remotely connect without a keyboard*
 5. Put the SSD card in the Raspberry Pi
@@ -53,7 +57,7 @@ https://documentation.meraki.com/MV/Advanced_Configuration/External_RTSP
 ## Rpisurv
 Opensource IP surveillance for Raspberry Pi.
 
-1. If you are going to have multiple streams, add gpu_mem=512 to your /boot/config.txt
+1. If you are going to have multiple streams, add gpu_mem=512 to your /boot/config.txt.
 ```bash
     $ sudo nano /boot/config.txt
 ```
@@ -75,6 +79,8 @@ Opensource IP surveillance for Raspberry Pi.
 ```bash
     $ nano /usr/local/bin/rpisurv/conf/surveillance.yml 
 ```
+*nano tips: save = ctrl + o, exit = ctrl + x*
+
 6. Lastly Reboot the Raspberry Pi
 ```bas
     $ sudo reboot
