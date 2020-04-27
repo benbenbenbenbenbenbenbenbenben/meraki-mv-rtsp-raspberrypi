@@ -41,7 +41,7 @@ https://documentation.meraki.com/MV/Advanced_Configuration/External_RTSP
         https://www.raspberrypi.org/downloads/
 3. Run above imager, select Rasbian as OS, select your SD Card, write
 <p align="center">
-  <img height="80" src="https://github.com/benbenbenbenbenbenbenbenbenben/meraki-mv-rtsp-raspberrypi/blob/master/imager.png?raw=true">
+  <img height="200" src="https://github.com/benbenbenbenbenbenbenbenbenben/meraki-mv-rtsp-raspberrypi/blob/master/imager.png?raw=true">
 </p>
 
 4. Once finished go to the SD Card and create a file in the root directory called **ssh** (on Mac **touch ssh**)
